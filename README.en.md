@@ -1,21 +1,21 @@
 # Clínica Asmel — Client area
 
-WordPress child theme for **Clínica Asmel**’s private client area.
+WordPress child theme. I built **Clínica Asmel’s client area from scratch**:
+registration, approval, login, dashboard, reports, receipts, document upload,
+and PDF conversion.
 
-The core work was migrating the clinic’s historical database (10+ years)
-into WordPress and shipping a registration flow so every user resets their
-password and fills in data the old system didn’t have.
-
-I built the client area from scratch: reports/receipts, document upload
-(with PDF conversion), and legacy data sync (ZIP/DBF) with the site.
+I also migrated the clinic’s historical database (10+ years) into WordPress,
+with a registration flow so every user resets their password and fills in
+data the old system didn’t have, plus legacy sync (ZIP/DBF).
 
 Full version (Spanish): [*README.md*](./README.md)
 
 ## Includes
-- Legacy data migration / sync → WordPress
-- Registration with password reset and missing-data capture
+- Client area built from scratch
+- Registration, password reset, and missing-data capture
 - User approval
 - Reports and receipts dashboard
+- Legacy migration / sync → WordPress
 - DOC/DOCX → PDF conversion
 
 ## Stack
