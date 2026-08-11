@@ -1,0 +1,263 @@
+/*
+ Theme Name:   Hello Elementor Child
+ Theme URI:    https://github.com/elementor/hello-elementor-child
+ Description:  Tema hijo para area de clientes Asmel
+ Author:       Adrian Cabrera (adriandev.website)
+ Author URI:   https://asmel.com
+ Template:     hello-elementor
+ Version:      1.0.0
+ Text Domain:  asmel-clientes
+*/
+
+/* Estilos para formularios de Login */
+.asmel-form,
+.asmel-login-form,
+.asmel-primer-login-form,
+.asmel-register-form,
+.asmel-forgot-password-form,
+.asmel-reset-password-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #007C01; /* Verde oscuro como fondo */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.asmel-form p,
+.asmel-login-form p,
+.asmel-primer-login-form p,
+.asmel-register-form p,
+.asmel-forgot-password-form p,
+.asmel-reset-password-form,
+.elementor-shortcode p {
+    text-align: center;
+    color: white;
+} 
+
+.asmel-form h3,
+.asmel-login-form h3,
+.asmel-primer-login-form h3,
+.asmel-register-form h3,
+.asmel-forgot-password-form h3,
+.asmel-reset-password-form h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.asmel-form .form-group,
+.asmel-login-form .form-group,
+.asmel-primer-login-form .form-group,
+.asmel-register-form .form-group,
+.asmel-forgot-password-form .form-group,
+.asmel-reset-password-form .form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.asmel-form label,
+.asmel-login-form label,
+.asmel-primer-login-form label,
+.asmel-register-form label,
+.asmel-forgot-password-form label,
+.asmel-reset-password-form label {
+    display: block;
+    color: white;
+    margin-bottom: 8px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.asmel-form input[type="text"],
+.asmel-form input[type="email"],
+.asmel-form input[type="password"],
+.asmel-login-form input[type="text"],
+.asmel-login-form input[type="email"],
+.asmel-login-form input[type="password"],
+.asmel-primer-login-form input[type="text"],
+.asmel-primer-login-form input[type="email"],
+.asmel-primer-login-form input[type="password"],
+.asmel-register-form input[type="text"],
+.asmel-register-form input[type="email"],
+.asmel-register-form input[type="password"],
+.asmel-forgot-password-form input[type="text"],
+.asmel-forgot-password-form input[type="email"],
+.asmel-forgot-password-form input[type="password"],
+.asmel-reset-password-form input[type="text"],
+.asmel-reset-password-form input[type="email"],
+.asmel-reset-password-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 1px solid #AAFFAB;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.asmel-form input[type="text"]:focus,
+.asmel-form input[type="email"]:focus,
+.asmel-form input[type="password"]:focus,
+.asmel-login-form input[type="text"]:focus,
+.asmel-login-form input[type="email"]:focus,
+.asmel-login-form input[type="password"]:focus,
+.asmel-primer-login-form input[type="text"]:focus,
+.asmel-primer-login-form input[type="email"]:focus,
+.asmel-primer-login-form input[type="password"]:focus,
+.asmel-register-form input[type="text"]:focus,
+.asmel-register-form input[type="email"]:focus,
+.asmel-register-form input[type="password"]:focus,
+.asmel-forgot-password-form input[type="text"]:focus,
+.asmel-forgot-password-form input[type="email"]:focus,
+.asmel-forgot-password-form input[type="password"]:focus,
+.asmel-reset-password-form input[type="text"]:focus,
+.asmel-reset-password-form input[type="email"]:focus,
+.asmel-reset-password-form input[type="password"]:focus {
+    border-bottom-color: #FFFFFF;
+    box-shadow: 0 0 0 2px rgba(0, 194, 255, 0.2);
+}
+
+.asmel-form input[type="submit"],
+.asmel-login-form input[type="submit"],
+.asmel-primer-login-form input[type="submit"],
+.asmel-register-form input[type="submit"],
+.asmel-forgot-password-form input[type="submit"],
+.asmel-reset-password-form input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: #FFFFFF;
+    color: #6c5e5e;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.asmel-form input[type="submit"]:hover,
+.asmel-login-form input[type="submit"]:hover,
+.asmel-primer-login-form input[type="submit"]:hover,
+.asmel-register-form input[type="submit"]:hover,
+.asmel-forgot-password-form input[type="submit"]:hover,
+.asmel-reset-password-form input[type="submit"]:hover {
+    background-color: #AAFFAB;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 194, 255, 0.3);
+}
+
+.asmel-form .login-links,
+.asmel-login-form .login-links,
+.asmel-primer-login-form .login-links,
+.asmel-register-form .login-links,
+.asmel-forgot-password-form .login-links,
+.asmel-reset-password-form .login-links {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #a0b5d8;
+}
+
+.asmel-form .login-links a,
+.asmel-login-form .login-links a,
+.asmel-primer-login-form .login-links a,
+.asmel-register-form .login-links a,
+.asmel-forgot-password-form .login-links a,
+.asmel-reset-password-form .login-links a,
+.login-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.asmel-form .login-links a:hover,
+.asmel-login-form .login-links a:hover,
+.asmel-primer-login-form .login-links a:hover,
+.asmel-register-form .login-links a:hover,
+.asmel-forgot-password-form .login-links a:hover,
+.asmel-reset-password-form .login-links a:hover,
+.login-links a:hover {
+    color: #AAFFAB;
+}
+
+/* Mensajes de error y éxito */
+.asmel-error, .asmel-success {
+    color: #FFFFFF;
+    background: #38BCA3;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+.asmel-success a {
+    color: #FFFFFF;
+    text-decoration: underline !important;
+}
+
+/* Ajustes específicos para el formulario de registro */
+.asmel-register-form {
+    background-color: #015202 !important;
+}
+
+/* Ajustes para el formulario de login */
+.asmel-login-form {
+    background-color: #015202 !important;
+}
+
+/* ============================================================
+   Contenedor con scroll para resultados de shortcodes
+   Uso: agregar la clase "asmel-resultados-scroll" al widget
+   Shortcode en Elementor (Advanced > CSS Classes).
+   Permite scroll horizontal/vertical en tablas largas sin
+   romper el layout de la página.
+   ============================================================ */
+.asmel-resultados-scroll {
+    width: 100%;
+    overflow: auto;
+    max-height: 70vh;
+    -webkit-overflow-scrolling: touch; /* scroll suave en iOS */
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.asmel-resultados-scroll table {
+    border-collapse: collapse;
+}
+
+/* Cabecera fija al hacer scroll vertical */
+.asmel-resultados-scroll thead th {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 2;
+}
+
+/* Ajustes para el formulario de recuperación de contraseña */
+.asmel-forgot-password-form {
+    background-color: #015202 !important;
+}
+
+/* Ajustes para el formulario de restablecimiento de contraseña */
+.asmel-reset-password-form {
+    background-color: #015202 !important;
+}
+
+/* Todos los textos dentro de los formularios */
+.asmel-login-form *,
+.asmel-primer-login-form *,
+.asmel-register-form *,
+.asmel-forgot-password-form *,
+.asmel-reset-password-form * {
+    color: white;
+}
+

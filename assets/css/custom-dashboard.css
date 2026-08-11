@@ -1,0 +1,321 @@
+/* Estilos personalizados para el area de clientes */
+
+/* Info Empresa */
+.infoc .elementor-shortcode {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+/* Botones menu principal */
+.ac-boton:hover {
+    color:#38BCA3;
+    text-decoration:underline;
+}
+.ac-boton.active {
+  background: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
+}
+
+/* Boton para cerrar sesion */
+.logout-button {
+    font-size:13px;
+    color:#7A7A7A;
+}
+
+.logout-button:hover {
+    color:#38BCA3;
+}
+
+/* Estilos para el formulario de consultas */
+.asmel-consultas {
+    background-color: #38BCA3;
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.asmel-consultas .consulta-form,
+.asmel-consultas .informes-search-form,
+.asmel-consultas .pacientes-search-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.asmel-consultas .form-row {
+    display: contents;
+}
+
+.asmel-consultas .form-group {
+    flex: 1 1 300px;
+    min-width: 300px;
+}
+
+.asmel-consultas .form-group input[type="text"],
+.asmel-consultas .form-group input[type="date"],
+.asmel-consultas .form-group select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #666666;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.asmel-consultas .form-group input[type="text"]:focus,
+.asmel-consultas .form-group input[type="date"]:focus,
+.asmel-consultas .form-group select:focus {
+    outline: none;
+    border-color: #00838A;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el select "Tipo de Informe" */
+.asmel-consultas .tipo-informe-select {
+    position: relative;
+}
+
+.asmel-consultas .tipo-informe-select::after {
+    content: 'v';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #ffffff;
+    background-color: #00838A;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* Botones */
+.asmel-consultas .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.asmel-consultas .button-primary {
+    background-color: #00838A;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.asmel-consultas .button-primary:hover, .asmel-consultas .button-primary:focus {
+    background-color: #006b70;
+}
+
+.asmel-consultas .button-secondary {
+    background-color: #23A9B0;
+    color: white;
+}
+
+.asmel-consultas .button-secondary:hover, .asmel-consultas .button-secondary:focus {
+    background-color: #1c8a8f;
+}
+
+/* Sugerencias del autocompletado */
+.asmel-consultas .suggestions {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.asmel-consultas .suggestions ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.asmel-consultas .suggestions li {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.asmel-consultas .suggestions li:hover {
+    background-color: #f8f9fa;
+}
+
+/* Estilos para la tabla de resultados */
+.archivos-results, .pacientes-table-container {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 30px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.archivos-results h3 {
+    font-size:1rem;
+}
+
+.archivos-results p {
+    color: #7a7a7a;
+}
+
+.asmel-consultas .archivos-table,
+.asmel-consultas .pacientes-table,
+.asmel-consultas .informes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.asmel-consultas .archivos-table th,
+.asmel-consultas .archivos-table td,
+.asmel-consultas .pacientes-table th,
+.asmel-consultas .pacientes-table td,
+.asmel-consultas .informes-table th,
+.asmel-consultas .informes-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 14px;
+}
+
+.asmel-consultas .archivos-table th,
+.asmel-consultas .pacientes-table th,
+.asmel-consultas .informes-table th {
+    background-color: #1a2d5f;
+    color: white;
+    font-weight: 600;
+}
+
+.asmel-consultas .archivos-table tr:last-child td,
+.asmel-consultas .pacientes-table tr:last-child td,
+.asmel-consultas .informes-table tr:last-child td {
+    border-bottom: none;
+}
+
+.asmel-consultas .archivos-table tr:hover,
+.asmel-consultas .pacientes-table tr:hover,
+.asmel-consultas .informes-table tr:hover  {
+    background-color: #f8f9fa;
+}
+
+.asmel-consultas .archivos-table .button-small,
+.asmel-consultas .pacientes-table .button-small {
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.asmel-consultas .asmel-consultas .bulk-actions {
+    text-align: right;
+}
+
+.asmel-consultas .bulk-actions .button-primary {
+    background-color: #00838A;
+}
+
+.asmel-consultas .bulk-actions .button-primary:hover {
+    background-color: #006b70;
+}
+
+/* Estilos para la tabla de resultados de informes */
+.informes-table .button-small {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #00838A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.informes-table .button-small:hover {
+    background-color: #006b70;
+    color: white;
+}
+
+/* Estilos para el perfil de empresa */
+ .perfil-empresa-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+ .perfil-empresa-form .form-group {
+    margin-bottom: 20px;
+}
+
+ .perfil-empresa-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #495057;
+}
+
+ .perfil-empresa-form input[type="text"],
+ .perfil-empresa-form input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #495057;
+}
+
+ .perfil-empresa-form input[type="text"]:focus,
+ .perfil-empresa-form input[type="email"]:focus {
+    outline: none;
+    border-color: #00838A;
+    box-shadow: 0 0 0 2px rgba(0, 131, 138, 0.2);
+}
+
+ .perfil-empresa-form input[readonly] {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+ .perfil-empresa-form small {
+    display: block;
+    margin-top: 5px;
+    color: #6c757d;
+    font-size: 12px;
+}
+
+ .perfil-empresa-form .button-primary {
+    background-color: #00838A;
+    color: white;
+}
+
+ .perfil-empresa-form .button-primary:hover {
+    background-color: #006b70;
+    color: white;
+}
+
+.asmel-consultas label {
+    color: #FFFFFF;
+}
