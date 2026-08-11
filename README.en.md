@@ -4,7 +4,7 @@ WordPress child theme. I built **Clínica Asmel’s client area from scratch**:
 registration, approval, login, dashboard, reports, receipts, document upload,
 and PDF conversion.
 
-I also migrated and integrated the clinic’s historical database (decades of legacy
+I also migrated and integrated the clinic’s historical database (10+ years of legacy
 records) with WordPress, with a registration flow so every user resets their
 password and fills in data the old system didn’t have, plus ongoing ZIP/DBF sync.
 
@@ -111,21 +111,21 @@ Select patients/reports → Build XLSX in-memory → Pack into ZIP
 
 ### Business problem
 The clinic needed to **fully digitize its medical document workflow** without losing
-access to 20+ years of legacy records. Previous setup: local files, no search,
+access to 10+ years of legacy records. Previous setup: local files, no search,
 no access control.
 
 ### Value delivered
 - Multi-user controlled access with approval workflow
 - Full-text search across 10K+ documents in <500ms
 - Automated DOC→PDF conversion (removed ~4 hours/week of manual work)
-- Bidirectional integration with legacy DB (no forced big-bang migration)
-- Zero data loss on constrained shared hosting
+- Historical database migration to WordPress + ongoing legacy DB sync
+- No data loss on constrained shared hosting
 
 ### Transferable learnings
 - Legacy system integration (common in 10+ year businesses)
-- Healthcare-oriented access patterns (controlled access, audit)
-- Full-stack problem solving (frontend UX + backend automation)
-- Production resilience (shared hosting, graceful degradation)
+- Controlled-access patterns (approval, user audit)
+- Full-stack problem solving (client UX + backend automation)
+- Production resilience (shared hosting limits, graceful degradation)
 - Architectural tradeoffs (complexity vs. maintainability)
 
 ---

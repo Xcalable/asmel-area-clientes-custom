@@ -4,9 +4,9 @@ Child theme de WordPress. El **área de clientes de Clínica Asmel la hice desde
 registro, aprobación, login, dashboard, informes, comprobantes, carga de documentos
 y conversión a PDF.
 
-También migré e integré la base histórica de la clínica (décadas de registros legacy)
-con WordPress, con un registro para que cada usuario blanquee su contraseña y complete
-datos que el sistema anterior no tenía, más sync continuo vía ZIP/DBF.
+También migré e integré la base histórica de la clínica (más de 10 años de registros
+legacy) con WordPress, con un registro para que cada usuario blanquee su contraseña
+y complete datos que el sistema anterior no tenía, más sync continuo vía ZIP/DBF.
 
 > English: [*README.en.md*](./README.en.md)
 
@@ -110,22 +110,22 @@ Selecciona pacientes/reportes → Genera XLSX in-memory → Empaqueta en ZIP
 ## Por Qué Este Proyecto Importa
 
 ### Problema de Negocio Resuelto
-Clínica necesitaba **digitalizar completamente su flujo de documentos médicos** sin perder acceso a 20+ años de registros en formato legacy. Sistema anterior: archivos locales, sin búsqueda, sin control de acceso.
+Clínica necesitaba **digitalizar completamente su flujo de documentos médicos** sin perder acceso a más de 10 años de registros en formato legacy. Sistema anterior: archivos locales, sin búsqueda, sin control de acceso.
 
 ### Valor Entregado
-- Acceso controlado multi-usuario con aprobación workflow
+- Acceso controlado multi-usuario con flujo de aprobación
 - Búsqueda full-text de 10K+ documentos en <500ms
-- Automatización de conversión DOC→PDF (eliminó 4 horas/semana manual)
-- Integración bidireccional con DB legacy (cero migración forzada)
-- Zero data loss en shared hosting resource-constrained
+- Automatización de conversión DOC→PDF (eliminó ~4 horas/semana de trabajo manual)
+- Migración de la base histórica a WordPress + sync continuo con DB legacy
+- Sin pérdida de datos en shared hosting con recursos limitados
 
 ### Aprendizajes Técnicos Aplicables
-Este proyecto valida expertise en:
-- **Legacy system integration** (común en empresas 10+ años)
-- **Healthcare compliance patterns** (acceso controlado, auditoría)
-- **Full-stack problem solving** (frontend UX + backend automation)
-- **Production resilience** (shared hosting constraints, graceful degradation)
-- **Architectural decision making** (tradeoffs entre complejidad y mantenibilidad)
+Este proyecto aplica experiencia en:
+- **Integración con sistemas legacy** (común en empresas con 10+ años)
+- **Patrones de acceso controlado** (aprobación, auditoría de usuarios)
+- **Resolución full-stack** (UX de clientes + automatización backend)
+- **Resiliencia en producción** (límites de shared hosting, degradación controlada)
+- **Decisiones de arquitectura** (equilibrio entre complejidad y mantenimiento)
 
 ---
 
