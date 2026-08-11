@@ -1,47 +1,27 @@
 # Clínica Asmel — Área de clientes
 
-Child theme de WordPress para el **área de clientes de Clínica Asmel**.
+Child theme de WordPress para el área privada de **Clínica Asmel**.
 
-No es un tema “bonito” genérico: es el panel donde los clientes se registran, esperan aprobación, inician sesión y consultan informes / comprobantes. También hay carga de documentos, conversión DOC/DOCX → PDF y una automatización de importación (ZIP/DBF) pensada para el flujo operativo de la clínica.
+El trabajo central fue migrar la base histórica de la clínica (más de 10 años)
+a WordPress y poner en marcha un registro para que cada usuario blanquee
+su contraseña y complete datos que el sistema anterior no tenía.
 
-> English summary: [*README.en.md*](./README.en.md)
+El área de clientes la armé desde cero: consulta de informes/comprobantes,
+carga de documentos (con conversión a PDF) y sincronización de datos legacy
+(ZIP/DBF) con el sitio.
 
----
+> English: [*README.en.md*](./README.en.md)
 
-## Qué resuelve
-
-- Login / registro / primer acceso y política de caducidad de contraseña
-- Aprobación de usuarios y control de accesos
-- CPT **Informe** con archivos asociados
-- Subida AJAX y conversión de documentos
-- Dashboard de clientes (informes, comprobantes, exportación)
-- Sync / importación automatizada desde carpetas del servidor
+## Incluye
+- Migración / sync de datos legacy → WordPress
+- Registro con blanqueo de contraseña y carga de datos faltantes
+- Aprobación de usuarios
+- Dashboard de informes y comprobantes
+- Conversión DOC/DOCX → PDF
 
 ## Stack
-
-- WordPress (tema hijo)
-- PHP, JavaScript, CSS
-- Librerías externas para conversión de documentos
-- Lectura DBF para automatización
-
-## Estructura
-
-```
-functions.php
-includes/     # login, usuarios, CPT, dashboard, converter, automation…
-assets/css/
-assets/js/
-style.css
-```
-
-## Privacidad en este repo público
-
-Rutas de servidor, usuario de hosting y correos reales se reemplazaron por placeholders (`/path/to/...`, `clientes@example.com`).
-
-El desarrollo privado (con paths reales) vive en otro repositorio.
+WordPress (child theme) · PHP · JavaScript · CSS · DBF/ZIP
 
 ## Nota
-
-Código mostrado con permiso del cliente, como referencia de portfolio.
-
-La marca Clínica Asmel y sus contenidos operativos pertenecen a su propietario.
+Repo público sanitizado (sin rutas/correos reales).  
+Código con permiso del cliente; la marca pertenece a Clínica Asmel.
